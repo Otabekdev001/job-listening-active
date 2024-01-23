@@ -1,4 +1,12 @@
 /* GLOBAL STYLE */
+:root{
+    --heading-text-color:#5CA5A5;
+    --text-color:#2B3939;
+    --smal-text:#7C8F8F;
+    --white-color:#FFFFFF;
+}
+
+
 html{
     box-sizing: border-box;
     height: 100%;
@@ -17,7 +25,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    font-family: "Arial",sans-serif;
+    font-family: 'League Spartan', sans-serif;font-family: 'League Spartan', sans-serif;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -35,17 +43,174 @@ img{
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1150px;
+    padding-left:20px;
+    padding-right:20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
-
+.header{
+    width: 100%;
+    min-height: 156px;
+    background-image:url(..//img/header.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
 
 /* MAIN CONTENT */
 .main-content{
+    background-color:#EFFAFA;
     flex-grow: 1;
 }
+.main-info {
+    margin-top: 76px;
+
+}
+.main-info-began {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    padding:0px 40px;
+    background-color:var(--white-color);
+    margin-bottom: 24px;
+}
+.main-info-began:last-child{
+    margin-bottom: 0;
+}
+.only-box{
+    border-left:5px solid var(--heading-text-color) ;
+}
+.main-began-info {
+    display: flex;
+    align-items: center;
+}
+.img {
+    width: 88px;
+    height: 88px;
+}
+.main-info-list {
+    padding-left: 24px;
+}
+.main-info-item {
+    list-style: none;
+    margin-bottom:8px;
+}
+
+.main-began-heading {
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+.none-bg{
+    font-size:14px;
+    color: var(--heading-text-color);
+}
+.blue-bg{
+    padding:6px 8px 4px 8px;
+    border-radius: 12px;
+    background: var(--heading-text-color);
+    font-size:11px;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px; /* 127.273% */
+    letter-spacing: -0.085px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    
+}
+.black-bg{
+    padding:6px 8px 4px 8px;
+    border-radius: 12px;
+    background:var(--text-color);
+    font-size:11px;
+    color: var(--white-color);
+    font-size: 11px;
+    line-height: 14px; /* 127.273% */
+    letter-spacing: -0.085px;
+    text-transform: uppercase;
+}
+.span{
+    color:var(--smal-text);
+}
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+.main-began-title:hover{
+    color:var(--heading-text-color);
+    cursor: pointer;
+}
+.main-began-title {
+    margin: 0;
+    padding: 0;
+    color:var(--text-color);
+    font-family: Spartan;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    word-spacing: 12px;
+    line-height: 24px; /* 160% */
+    letter-spacing: -0.115px;
+}
+.span{
+    margin-right: 16px;
+}
+.main-began-little-text {
+    color: var(--smal-text);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px; /* 160% */
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: 16px;
+}
+
+/* Add this section to center the links in the second section */
+.main-link-wrapp {
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+    display: flex;
+    align-items: center;
+   /* Adjust the margin as needed */
+}
+
+.main-link {
+    color: var(--heading-text-color);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.1px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: rgb(239,246,246);
+    margin-top: 60px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+.main-link:last-child{
+    margin-right: 0;
+}
+.main-link:active{
+    opacity: 0.8;
+}
+.main-link:hover{
+    color:var(--white-color);
+    background-color:var(--heading-text-color);
+    cursor: pointer;
+}
+
+
+
+/* MODAL SECTION */
